@@ -1,0 +1,2 @@
+ALTER TABLE "web3platform_tx_action" ALTER COLUMN "volume" SET DEFAULT '0';--> statement-breakpoint
+ALTER TABLE "web3platform_tx_action_address" ADD COLUMN "volume" numeric(30, 10) DEFAULT '0' NOT NULL;

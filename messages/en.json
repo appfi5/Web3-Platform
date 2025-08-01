@@ -1,0 +1,220 @@
+{
+  "metadata": {
+    "title": "P",
+    "description": "Next Generation UXTO Explorer",
+    "block": {
+      "title": "{chainName} Blockchain Explorer | {chainName} Block {blockNumber}",
+      "description": "View block {blockNumber} information, transaction list, and statistics data. On Magickbase, check the latest {chainName} block information and block analysis."
+    },
+    "home": {
+      "title": "P | Magickbase for BTC/CKB Ecosystems",
+      "description": "Magickbase is a leading multi-currency blockchain explorer that provides real-time information queries for blocks, transactions, addresses, assets, and tokens of currencies such as BTC and CKB, helping you easily track blockchain data.",
+      "ogImage": {
+        "title": "Web3 Platform for BTC/CKB Ecosystems",
+        "description": "Magickbase is a leading multi-currency blockchain explorer that provides real-time information queries for blocks, transactions, addresses, assets, and tokens of currencies such as BTC and CKB, helping you easily track blockchain data."
+      }
+    },
+    "transaction": {
+      "title": "{chainName} Blockchain Explorer | {chainName} Transaction {hash}",
+      "description": "View transaction time, transaction status, and statistics for transaction {hash}. On Magickbase, check the latest {chainName} transaction information and transaction analysis."
+    },
+    "asset": {
+      "title": "Asset | BTC, CKB Chain Asset Inquiry",
+      "description": "Magickbase, a leading multi-currency blockchain explorer, offers BTC and CKB chain asset inquiries, including their price, 24-hour change, market cap, trading volume, transaction count, holder count, age, and more.",
+      "top10": "To 10 Assets"
+    },
+    "token": {
+      "title": "BTC, CKB Chain Asset Inquiry | {symbol} Token Details",
+      "description": "View token {symbol} price, transaction list, market cap, maximum supply, holder count, and more. On Magickbase, check the latest Bitcoin, CKB token information and token analysis."
+    },
+    "address": {
+      "title": "{chainName} Blockchain Explorer | Address {address}",
+      "description": "View address information, balance, token amounts, transaction list, and statistics for address {address}. On Magickbase, check the latest address information and address analysis."
+    },
+    "aboutUs": {
+      "title": "Your all-in-one intelligent workspace",
+      "description": "The blockchain ecosystem, despite its transformative potential, has long been hindered by fragmentation, technical complexity, and steep learning curves that deter mainstream adoption. P | Magickbase emerges as a solution to these challenges, offering a paradigm that enhances how decentralized applications are built, managed, and scaled. By unifying assets, enabling intuitive workflows, and fostering a vibrant community, P positions itself as a cornerstone for the next generation of Web3 applications.",
+      "ogImage": {
+        "title": "Your all-in-one intelligent workspace",
+        "description": "The blockchain ecosystem, despite its transformative potential, has long been hindered by fragmentation, technical complexity, and steep learning curves that deter mainstream adoption. P | Magickbase emerges as a solution to these challenges, offering a paradigm that enhances how decentralized applications are built, managed, and scaled. By unifying assets, enabling intuitive workflows, and fostering a vibrant community, P positions itself as a cornerstone for the next generation of Web3 applications."
+      }
+    }
+  },
+  "common": {
+    "Home": "Home",
+    "Assets": "Assets",
+    "Nervos_DAO": "Nervos DAO",
+    "Charts": "Charts",
+    "Pricing": "Pricing",
+    "Change_language": "Change language",
+    "locale": "{locale, select, zh {Chinese} en {English} other {Unknown}}",
+    "copied": "Copied",
+    "Privacy_Policy": "Privacy Policy",
+    "Terms_of_Services": "Terms of Services",
+    "About_Us": "About Us",
+    "Docs": "Docs"
+  },
+  "AddressPage": {
+    "Address": "Address"
+  },
+  "TransactionPage": {
+    "Transaction": "Transaction"
+  },
+  "BlockPage": {
+    "tabs": {
+      "transactions": "Transactions",
+      "statistic": "Statistic"
+    },
+    "Block": "Block",
+    "statistic": {
+      "tabs": {
+        "address": "Address",
+        "asset": "Asset"
+      },
+      "address": {
+        "detail": {
+          "title": "Detail",
+          "input": "Input",
+          "output": "Output",
+          "change": "Change",
+          "volume": "Volume"
+        },
+        "address": "Address",
+        "asset": "Asset",
+        "change": "Change",
+        "action": "Action"
+      },
+      "asset": {
+        "detail": {
+          "title": "Detail",
+          "hash": "Hash",
+          "value": "Value",
+          "volume": "Volume"
+        },
+        "name": "Name",
+        "tags": "Tags",
+        "amount": "Amount",
+        "volume": "Volume",
+        "action": "Action"
+      }
+    },
+    "transactions": {
+      "overview": {
+        "total": "Total txns",
+        "amount": "Txn Amount",
+        "fees": "Txn Fees",
+        "tokens": "Tokens"
+      },
+      "hash": "Tx Hash",
+      "amount": "Amount",
+      "volume": "Volume",
+      "from": "From",
+      "to": "To",
+      "status": "Status",
+      "no": "No"
+    },
+    "info": {
+      "status": "Status",
+      "time": "Time",
+      "weight": "Weight",
+      "size": "Size",
+      "mindBy": "Mined By",
+      "difficulty": "Difficulty",
+      "blockReward": "Block Reward",
+      "feeReward": "Fee Reward",
+      "merkleTree": "Merkle Tree",
+      "nonce": "Nonce",
+      "bits": "Bits"
+    }
+  },
+  "PricingPage": {
+    "title": "Upgrade Your Plan for More Features",
+    "subtitle": "P | Magickbase offers a variety of plans to meet your needs. Upgrade your plan to enjoy more features.",
+    "plan": {
+      "annually": "Annually",
+      "monthly": "Monthly",
+      "price": "Price",
+      "projects": "Projects",
+      "credits": "Credits",
+      "rate-limit": "Rate Limit",
+      "support": "Support",
+      "workflow": "workflow",
+      "free_plan": {
+        "description": "Ideal for testing and side projects"
+      },
+      "individual_plan": {
+        "description": "For solo builders needing more flexibility"
+      },
+      "premium_plan": {
+        "description": "Scalable power for growing businesses"
+      },
+      "entrepreneur_plan": {
+        "description": "Enterprise-grade features with full control"
+      }
+    },
+    "faq": {
+      "how-to-subscribe": {
+        "q": "How to subscribe to the API?",
+        "a": "Log in to the P | Magickbase and go to the 'API Subscription Plans' page. Choose a plan that suits you (e.g., Free Plan, Subscription Plan, Pro Plan, or Enterprise Plan). Complete the subscription process on your personal page and obtain your API Key."
+      },
+      "what-is-api-key": {
+        "q": "What is an API Key? How do I get one?",
+        "a": "An API Key is a unique identifier that allows you to access the API, used for authentication and authorization of your requests. After logging into your account, you can generate and manage your API Key in the 'Developer Center' or 'API Key Management' page."
+      },
+      "usage": {
+        "q": "How can I monitor my API usage?",
+        "a": "After logging into your account, you can check your API call count, response time, error rate, and other statistics on the 'Usage Statistics' page. If you are approaching your plan quota, we will notify you via email."
+      },
+      "api-error": {
+        "q": "What should I do if my API request fails?",
+        "a": "Check if your API Key is correct and ensure it has not expired. Verify that your request format and parameters meet the API documentation requirements. Review the 'Error Logs' to find out the specific reason for the failure. If the issue persists, contact the technical support team via the support page."
+      },
+      "change-plan": {
+        "q": "How can I upgrade or downgrade my subscription plan?",
+        "a": "Log in to your account and go to the 'API Subscription Plans' page. Select a new subscription plan and complete the payment or confirmation. The new plan will take effect immediately, and you will receive a confirmation email."
+      }
+    }
+  },
+  "AboutUsPage": {
+    "heroTitle": "Your all-in-one intelligent workspace",
+    "description": "The blockchain ecosystem, despite its transformative potential, has long been hindered by fragmentation, technical complexity, and steep learning curves that deter mainstream adoption. P | Magickbase emerges as a solution to these challenges, offering a paradigm that enhances how decentralized applications are built, managed, and scaled. By unifying assets, enabling intuitive workflows, and fostering a vibrant community, P positions itself as a cornerstone for the next generation of Web3 applications.",
+    "keyFeatures": {
+      "title": "Core Philosophy",
+      "subtitle": "Simplicity and Power Through Abstraction",
+      "features": [
+        {
+          "title": "Value-Centric Abstraction",
+          "description": "This abstraction focuses on the intrinsic utility and insights derived from data, rather than the data itself. It ensures that users interact with blockchain applications not by navigating technical minutiae but by engaging directly with their desired outcomes. By prioritizing values, P simplifies asset management, enabling users to derive actionable insights without wrestling with underlying complexities."
+        },
+        {
+          "title": "Intent-Centric Abstraction",
+          "description": "Blockchain technology is often intimidating for newcomers due to its intricate processes. P adopts an intent-centric approach, where users specify their goals while the system handles the technical execution. For example, a user wishing to transfer Bitcoin needs only to express the intent; Magickbase takes care of transaction paths, fees, and confirmations in the background, ensuring a seamless experience."
+        },
+        {
+          "title": "Identity-Centric Abstraction",
+          "description": "Identity is fundamental to Web3 interaction. P provides a unified identity layer that works across chains, maintaining user privacy and security while enabling interoperability. This abstraction ensures that user traits and permissions are respected without exposing sensitive information."
+        }
+      ]
+    },
+    "detail": {
+      "title": "Meta Asset",
+      "subtitle": "A Universal Interface for Blockchain Assets",
+      "description": "At the heart of P lies the concept of Meta Asset, a revolutionary approach to standardizing and managing blockchain assets. Meta assets unify diverse asset types and structures, enabling seamless interaction across chains."
+    },
+    "detailFeatures": [
+      {
+        "title": "Local AI Agent",
+        "subtitle": "Privacy-First Automation",
+        "description": "Automation is a cornerstone of modern blockchain applications, and P takes it a step further with local-first AI agents. These agents encapsulate functionality into discrete, reusable units that operate directly on the user's device, ensuring privacy and minimizing reliance on external services."
+      },
+      {
+        "title": "Composable Workflows",
+        "subtitle": "Building Decentralized Pipelines",
+        "description": "P introduces a groundbreaking feature: composable workflow, which allows users to chain agents together to automate complex tasks. Inspired by tools like Apple's Shortcuts, this feature empowers users to create logical, interconnected pipelines that execute multiple steps seamlessly."
+      }
+    ],
+    "summary": {
+      "title": "A Platform for Growth"
+    }
+  }
+}

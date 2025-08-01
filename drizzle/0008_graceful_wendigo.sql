@@ -1,0 +1,1 @@
+CREATE INDEX IF NOT EXISTS "tx_asset_id" ON "web3platform_tx" USING btree ("asset_id");

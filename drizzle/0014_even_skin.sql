@@ -1,0 +1,1 @@
+ALTER TABLE "web3platform_asset_info" ADD COLUMN "description" varchar DEFAULT '';

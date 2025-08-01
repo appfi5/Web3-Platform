@@ -1,0 +1,20 @@
+name: Deploy to mainet
+
+on:
+  push:
+    branches:
+      - master
+
+jobs:
+  build:
+    uses: ./.github/workflows/build.yml
+    secrets: inherit
+  deploy:
+    needs: build
+    uses: ./.github/workflows/update-image.yml
+    with:
+      k8s-namespace: web3-platform-prod
+      k8s-workload: ''
+      image-name: ${{ needs.build.outputs.image-name }}
+      image-tag: ${{ needs.build.outputs.image-tag }}
+    secrets: inherit

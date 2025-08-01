@@ -1,0 +1,55 @@
+name: CI
+
+env:
+  DATABASE_URL: postgresql://postgres:password@localhost:5432/web3platform
+  COINMARKET_API_PREFIX: https://coinmarket.com
+  COINMARKET_API_KEY: '*'
+  UTXO_SWAP_API_PREFIX: https://utxoswap.xyz/utxo-swap/api
+  OMIGA_API_PREFIX: https://api.omiga.io/api
+  CKB_EXPLORER_API_PREFIX: https://testnet-api.explorer.nervos.org/api
+  NEXT_PUBLIC_IS_MAINNET: "true"
+  TOKEN_SECRET_KEY: web3platform
+  BTC_RPC_URL: https://docs-demo.btc.quiknode.pro
+
+on:
+  pull_request:
+    branches: ['*']
+  push:
+    branches: ['main', 'develop']
+  merge_group:
+
+jobs:
+  lint:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Setup
+        uses: ./.github/actions/setup
+
+      - name: Lint
+        run: npx eslint --config .eslintrc.ci.cjs $(git diff --name-only origin/develop |  grep -E '\.jsx?$|\.tsx?$' | paste -sd ' ' -)
+
+  typecheck:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Setup
+        uses: ./.github/actions/setup
+
+      - name: Typecheck
+        run: pnpm typecheck
+
+  test:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Setup
+        uses: ./.github/actions/setup
+
+      - name: Test
+        run: pnpm test

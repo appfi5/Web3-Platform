@@ -1,0 +1,3 @@
+*/5 * * * * cd /app && $(which npx) tsx ./sync-market.ts --sync=syncFromCoinmarket
+*/5 * * * * cd /app && $(which npx) tsx ./sync-market.ts --sync=syncFromUTXOSwap
+*/5 * * * * cd /app && $(which npx) tsx ./sync-market.ts --sync=syncFromOmiga

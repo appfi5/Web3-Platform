@@ -17,6 +17,7 @@ const Home: NextPage = () => {
     <>
       <style>{customStyles}</style>
       <SwaggerUI url="/api/openapi.json" />
+      <></>
     </>
   );
 };

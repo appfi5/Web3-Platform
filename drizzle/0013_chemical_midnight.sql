@@ -1,0 +1,1 @@
+ALTER TABLE "web3platform_address_asset" DROP CONSTRAINT "web3platform_address_asset_asset_id_web3platform_asset_info_id_fk";

@@ -1,0 +1,1 @@
+CREATE INDEX IF NOT EXISTS "tx_committed_time_index" ON "web3platform_tx" USING btree ("committed_time");

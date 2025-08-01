@@ -1,0 +1,1 @@
+CREATE INDEX IF NOT EXISTS "blocks_number" ON "web3platform_blocks" USING btree ("number");

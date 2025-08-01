@@ -1,0 +1,77 @@
+name: Update K8S workload image
+on:
+  workflow_call:
+    inputs:
+      image-name:
+        required: true
+        type: string
+      image-tag:
+        required: true
+        type: string
+      k8s-namespace:
+        required: true
+        type: string
+      # This is actually the suffix of the workload name. For example,
+      # metadata: 
+      #   name: web3-aggregator-ckb{{k8s-workload}}
+      # For more details, check the link of [Kubernetes Workloads](https://kubernetes.io/docs/concepts/workloads/controllers/deployment/).
+      k8s-workload:
+        required: true
+        type: string
+    secrets:
+      KUBOARD_USERNAME:
+        required: true
+      KUBOARD_ACCESS_KEY:
+        required: true
+      KUBOARD_API_URL:
+        required: true
+      TRIGGER_API_URL:
+        required: true
+      TRIGGER_TOKEN:
+        required: true
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Update CKB ClickHouse aggregator
+        uses: fjogeleit/http-request-action@v1
+        with:
+          url: ${{ secrets.TRIGGER_API_URL }}
+          customHeaders: '{"Content-Type": "application/json", "Authorization": "Basic ${{ secrets.TRIGGER_TOKEN }}"}'
+          data: '{"deployment":"web3-aggregator-ckb-ch${{ inputs.k8s-workload}}","namespace":"${{ inputs.k8s-namespace }}","new_image":"ghcr.io/magickbase/${{ inputs.image-name }}:${{ inputs.image-tag }}"}'
+          timeout: 60000
+      - name: Update BTC ClickHouse aggregator
+        uses: fjogeleit/http-request-action@v1
+        with:
+          url: ${{ secrets.TRIGGER_API_URL }}
+          customHeaders: '{"Content-Type": "application/json", "Authorization": "Basic ${{ secrets.TRIGGER_TOKEN }}"}'
+          data: '{"deployment":"web3-aggregator-btc-ch${{ inputs.k8s-workload}}","namespace":"${{ inputs.k8s-namespace }}","new_image":"ghcr.io/magickbase/${{ inputs.image-name }}:${{ inputs.image-tag }}"}'
+          timeout: 60000
+      - name: Update CKB Postgres aggregator
+        uses: fjogeleit/http-request-action@v1
+        with:
+          url: ${{ secrets.TRIGGER_API_URL }}
+          customHeaders: '{"Content-Type": "application/json", "Authorization": "Basic ${{ secrets.TRIGGER_TOKEN }}"}'
+          data: '{"deployment":"web3-aggregator-ckb${{ inputs.k8s-workload}}","namespace":"${{ inputs.k8s-namespace }}","new_image":"ghcr.io/magickbase/${{ inputs.image-name }}:${{ inputs.image-tag }}"}'
+          timeout: 60000
+      - name: Update BTC Postgres aggregator
+        uses: fjogeleit/http-request-action@v1
+        with:
+          url: ${{ secrets.TRIGGER_API_URL }}
+          customHeaders: '{"Content-Type": "application/json", "Authorization": "Basic ${{ secrets.TRIGGER_TOKEN }}"}'
+          data: '{"deployment":"web3-aggregator-btc${{ inputs.k8s-workload}}","namespace":"${{ inputs.k8s-namespace }}","new_image":"ghcr.io/magickbase/${{ inputs.image-name }}:${{ inputs.image-tag }}"}'
+          timeout: 60000
+      - name: Update Cronjob
+        uses: fjogeleit/http-request-action@v1
+        with:
+          url: ${{ secrets.TRIGGER_API_URL }}
+          customHeaders: '{"Content-Type": "application/json", "Authorization": "Basic ${{ secrets.TRIGGER_TOKEN }}"}'
+          data: '{"deployment":"web3-scheduled-task${{ inputs.k8s-workload}}","namespace":"${{ inputs.k8s-namespace }}","new_image":"ghcr.io/magickbase/${{ inputs.image-name }}:${{ inputs.image-tag }}"}'
+          timeout: 60000
+      - name: Update API
+        uses: fjogeleit/http-request-action@v1
+        with:
+          url: ${{ secrets.KUBOARD_API_URL }}/cluster/ckb/kind/CICDApi/${{ secrets.KUBOARD_USERNAME }}/resource/updateImageTag
+          method: 'PUT'
+          customHeaders: '{"Content-Type": "application/json", "Cookie": "KuboardUsername=${{ secrets.KUBOARD_USERNAME }}; KuboardAccessKey=${{ secrets.KUBOARD_ACCESS_KEY }}"}'
+          data: '{"kind":"deployments","namespace":"${{ inputs.k8s-namespace }}","name":"web3-api${{ inputs.k8s-workload }}","images":{"ghcr.io/magickbase/${{ inputs.image-name }}":"ghcr.io/magickbase/${{ inputs.image-name }}:${{ inputs.image-tag }}"}}'

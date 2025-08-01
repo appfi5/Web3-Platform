@@ -1,0 +1,1 @@
+ALTER TABLE "web3platform_history_price" ADD COLUMN "quote_asset_id" "bytea";

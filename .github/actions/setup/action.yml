@@ -1,0 +1,19 @@
+name: 'Setup and install'
+description: 'Common setup steps for Actions'
+
+runs:
+  using: composite
+  steps:
+    - uses: pnpm/action-setup@v4
+    - uses: actions/setup-node@v4
+      with:
+        node-version: 20
+        cache: 'pnpm'
+
+    - shell: bash
+      run: pnpm install
+
+    - shell: bash
+      run: |
+        echo '/// <reference types="next" />' > next-env.d.ts
+        echo '/// <reference types="next/image-types/global" />' >> next-env.d.ts

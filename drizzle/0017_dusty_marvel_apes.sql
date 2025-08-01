@@ -1,0 +1,2 @@
+CREATE INDEX IF NOT EXISTS "block_number" ON "web3platform_address_tx" USING btree ("block_number");--> statement-breakpoint
+CREATE INDEX IF NOT EXISTS "network_number" ON "web3platform_address_tx" USING btree ("network");

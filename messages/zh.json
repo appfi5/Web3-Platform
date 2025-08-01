@@ -1,0 +1,212 @@
+{
+  "metadata": {
+    "title": "P",
+    "description": "下一代 UXTO 浏览器",
+    "block": {
+      "title": "{chainName} 区块链浏览器 | {chainName} 区块 {blockNumber}",
+      "description": "查看区块 {blockNumber} 信息、交易列表、统计数据。在 Magickbase，查看最新的 {chainName} 区块信息和区块分析。"
+    },
+    "home": {
+      "title": "P | Magickbase 助力 BTC/CKB 生态建设的Web3平台",
+      "description": "Magickbase 是领先的多币种区块链浏览器，提供 BTC、CKB 等区块、交易、地址、资产和代币的实时信息查询，帮助您轻松跟踪区块链数据。",
+      "ogImage": {
+        "title": "助力 BTC/CKB 生态建设的 Web3 平台",
+        "description": "Magickbase 是领先的多币种区块链浏览器，提供 BTC、CKB 等区块、交易、地址、资产和代币的实时信息查询，帮助您轻松跟踪区块链数据。"
+      }
+    },
+    "transaction": {
+      "title": "{chainName} 区块链浏览器 | {chainName} 交易 {hash}",
+      "description": "查看交易 {hash} 交易时间、交易状态、统计数据。在 Maigckbase，查看最新的{chainName}交易信息和交易分析。"
+    },
+    "asset": {
+      "title": "资产 | BTC、CKB链上资产查询",
+      "description": "领先的多币种区块链浏览器 Magickbase 为您提供 BTC、CKB链上资产查询，包括它们的价格、24小时变化、市值、交易额、交易量、持有者数量、年龄等。",
+      "top10": "前10的资产"
+    },
+    "token": {
+      "title": "BTC、CKB链上资产查询 | {symbol} 代币详情",
+      "description": "查看代币 {symbol} 价格、交易列表、市值、最大供应量、持有者数量等。在 MaigckBase，查看最新的比特币、CKB 代币信息和代币分析。"
+    },
+    "address": {
+      "title": "区块链浏览器 | 地址 {address}",
+      "description": "查看地址 {address} 地址信息、余额、代币数量、交易列表、统计数据。在 Magickbase，查看最新的地址信息和地址分析。"
+    },
+    "aboutUs": {
+      "title": "您的一站式智能工作台",
+      "description": "P | Magickbase旨在解决区块链生态长期以来一直受到碎片化、技术复杂性和陡峭的学习曲线的阻碍，通过完善的数据解析、可视化工作流、资产管理及AI Agent等，增强去中心化应用程序的构建、管理和扩展方式，成为下一代 Web3 应用程序的基石。",
+      "ogImage": {
+        "title": "您的一站式智能工作台",
+        "description": "P | Magickbase旨在解决区块链生态长期以来一直受到碎片化、技术复杂性和陡峭的学习曲线的阻碍，通过完善的数据解析、可视化工作流、资产管理及AI Agent等，增强去中心化应用程序的构建、管理和扩展方式，成为下一代 Web3 应用程序的基石。"
+      }
+    }
+  },
+  "common": {
+    "Home": "首页",
+    "Assets": "资产",
+    "Nervos_DAO": "Nervos DAO",
+    "Charts": "图表",
+    "Change_language": "选择语言",
+    "Pricing": "价格",
+    "locale": "{locale, select, zh {中文} en {英文} other {未知}}",
+    "copied": "已复制",
+    "Privacy_Policy": "隐私政策",
+    "Terms_of_Services": "服务条款",
+    "About_Us": "关于我们",
+    "Docs": "文档"
+  },
+  "AddressPage": {
+    "Address": "地址"
+  },
+  "TransactionPage": {
+    "Transaction": "交易"
+  },
+  "BlockPage": {
+    "Block": "区块",
+    "statistic": {
+      "tabs": {
+        "address": "Address",
+        "asset": "Asset"
+      },
+      "address": {
+        "address": "Address",
+        "asset": "Asset",
+        "change": "Change",
+        "action": "Action"
+      },
+      "asset": {
+        "detail": {
+          "title": "Detail",
+          "hash": "Hash",
+          "value": "Value",
+          "volume": "Volume"
+        },
+        "name": "Name",
+        "tags": "Tags",
+        "amount": "Amount",
+        "volume": "Volume",
+        "action": "Action"
+      }
+    },
+    "tabs": {
+      "transactions": "Transactions",
+      "statistic": "Statistic"
+    },
+    "transactions": {
+      "overview": {
+        "total": "Total txns",
+        "amount": "Txn Amount",
+        "fees": "Txn Fees",
+        "tokens": "Tokens"
+      },
+      "hash": "Hash",
+      "amount": "Amount",
+      "volume": "Volume",
+      "from": "From",
+      "to": "To",
+      "status": "Status"
+    },
+    "Info": {
+      "status": "Status",
+      "time": "Time",
+      "weight": "Weight",
+      "size": "Size",
+      "mindBy": "Mined By",
+      "difficulty": "Difficulty",
+      "blockReward": "Block Reward",
+      "feeReward": "Fee Reward",
+      "merkleTree": "Merkle Tree",
+      "nonce": "Nonce",
+      "bits": "Bits"
+    }
+  },
+  "PricingPage": {
+    "title": "升级您的订阅，解锁更多功能",
+    "subtitle": "P | Magickbase 提供多种订阅计划，以满足您的需求。升级您的计划，享受更多功能。",
+    "plan": {
+      "annually": "年付",
+      "monthly": "月付",
+      "price": "价格",
+      "projects": "项目数",
+      "credits": "积分",
+      "rate-limit": "速率限制",
+      "support": "支持",
+      "workflow": "工作流",
+      "free_plan": {
+        "description": "免费计划，适合测试和个人项目"
+      },
+      "individual_plan": {
+        "description": "适合需要更高灵活性的个人开发者"
+      },
+      "premium_plan": {
+        "description": "为成长型企业提供可扩展的能力"
+      },
+      "entrepreneur_plan": {
+        "description": "企业级功能，全面掌控"
+      }
+    },
+    "faq": {
+      "how-to-subscribe": {
+        "q": "如何订阅API?",
+        "a": "在 P | Magickbase 平台登录后，在\"API订阅计划\"页面选择适合您的计划(例如免费计划、订阅计划、专业计划或企业计划)。在个人页面根据提示完成订阅并获取您的API密钥(API Key). "
+      },
+      "what-is-api-key": {
+        "q": "什么是API Key？如何获取?",
+        "a": "API Key 是您访问API的唯一身份标识，用于认证和授权您的请求。 登录账户后，在“开发者中心”或“API密钥管理”页面生成并管理您的API Key。 "
+      },
+      "usage": {
+        "q": "如何监控我的API使用情况?",
+        "a": "登录账户后，在\"使用情况统计\"页面可以查看您的API调用次数、响应时间、错误率等数据。 如果接近计划配额，我们会通过电子邮件提醒您。"
+      },
+      "api-error": {
+        "q": "API请求失败怎么办?",
+        "a": "检查您的API Key是否正确，并确保它没有过期。确保请求格式和参数符合API文档的要求。查看\"错误日志\"，了解请求失败的具体原因。如果问题仍未解决，请通过支持页面联系技术支持团队。"
+      },
+      "change-plan": {
+        "q": "如何升级或降级我的订阅计划？",
+        "a": "登录账户后，前往“API订阅计划”页面。选择新的订阅计划并完成支付或确认。新计划会立即生效，您也会收到相关确认邮件。 "
+      }
+    }
+  },
+  "AboutUsPage": {
+    "heroTitle": "您的一站式智能工作台",
+    "description": "P | Magickbase旨在解决区块链生态长期以来一直受到碎片化、技术复杂性和陡峭的学习曲线的阻碍，通过完善的数据解析、可视化工作流、资产管理及AI Agent等，增强去中心化应用程序的构建、管理和扩展方式，成为下一代 Web3 应用程序的基石。",
+    "keyFeatures": {
+      "title": "核心理念",
+      "subtitle": "通过抽象实现简单和强大",
+      "features": [
+        {
+          "title": "以价值为中心的抽象",
+          "description": "这种抽象侧重于数据本身的内在效用和见解。它确保用户与区块链应用程序的交互不是通过浏览技术细节，而是直接参与他们想要的结果。通过优先考虑价值，P简化了资产管理，使用户能够获得可行的见解，而无需处理底层复杂性。"
+        },
+        {
+          "title": "以意图为中心的抽象",
+          "description": "区块链技术往往让新手望而生畏，因为它的流程非常复杂。P采用以意图为中心的方法，用户指定目标，而系统负责技术执行。例如，想要转移比特币的用户只需表达意图；Magickbase会在后台处理交易路径、费用和确认，确保无缝体验。"
+        },
+        {
+          "title": "以身份为中心的抽象",
+          "description": "身份是 Web3 交互的基础。P提供跨链工作的统一身份层，在实现互操作性的同时维护用户隐私和安全。这种抽象确保尊重用户特征和权限，而不会暴露敏感信息。"
+        }
+      ]
+    },
+    "detail": {
+      "title": "Meta Asset",
+      "subtitle": "打造资产的通用接口",
+      "description": "元资产统一了各种资产类型和结构，实现了跨链无缝交互，这是标准化和管理区块链资产的革命性方法。"
+    },
+    "detailFeatures": [
+      {
+        "title": "本地 AI Agent",
+        "subtitle": "隐私优先的自动化",
+        "description": "自动化是现代区块链应用的基石，而P通过本地优先的 AI agent 将功能封装到离散的、可重复使用的单元中，并将单元直接在用户的设备上运行，确保隐私并最大限度地减少对外部服务的依赖。"
+      },
+      {
+        "title": "可组合的工作流",
+        "subtitle": "轻松实现复杂任务",
+        "description": "用户能够创建逻辑性、互连的管道，无缝执行多个步骤的任务，并可以通过平台分发共享、购买和出售其创作，促进社区驱动的创新。"
+      }
+    ],
+    "summary": {
+      "title": "持续成长的平台"
+    }
+  }
+}

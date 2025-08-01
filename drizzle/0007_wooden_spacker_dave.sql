@@ -1,0 +1,1 @@
+CREATE INDEX IF NOT EXISTS "address_tx_address" ON "web3platform_address_tx" USING btree ("address");

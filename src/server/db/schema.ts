@@ -379,6 +379,7 @@ export const historyPrice = createTable(
   },
   (table) => ({
     key: unique().on(table.assetId, table.time),
+    timeIdx: index('history_price_time_idx').on(table.time),
   }),
 );
 

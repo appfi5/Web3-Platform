@@ -1,0 +1,1 @@
+CREATE INDEX "history_price_time_idx" ON "web3platform_history_price" USING btree ("time");
